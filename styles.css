@@ -1,0 +1,208 @@
+/* Estilos para el header y botones */
+header {
+    background-color: #2E2C2C;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+
+button {
+    background-color: #8C8585;
+    color: white;
+    border: white solid;
+    padding: 15px 58px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3e6793;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial bold, sans-serif;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    height: 100%;
+    
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2; 
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+h1 {
+    color: #2E2C2C;
+}
+
+p {
+    color: #141313;
+    font-family: Arial bold, sans-serif;
+}
+
+ul {
+    /*list-style-type: none;*/
+    padding: 5;
+    color:#141313;
+    font-family: Arial bold,
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #2E2C2C;
+    color: white solid;
+    text-align: center;
+    padding: 0 px;
+    position: center;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    display: flexbox;
+}
+
+.botonFooter {
+    background-color: #2E2C2C;
+    color: white;
+    border: white solid;
+    padding: 15px 58px;
+    margin: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    }
+
+
+/* Estilos para el contenedor de la imagen y el texto */
+.container {
+    min-height: 50vh;
+    display: flex; /* Usa flexbox para alinear los elementos */
+    align-items: center; /* Alinea verticalmente el contenido al principio */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin-top: 50px;
+    
+
+}
+
+.image {
+    max-width: 200px; /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+
+}
+
+.text {
+    /* flex: 1; Permite que el texto ocupe el espacio restante */
+    padding: 20px;             /* Espacio interior */
+    border-radius: 10px;        /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left;         /* Centrar el texto dentro del recuadro */
+    max-width: 700px;           /* Ancho máximo del recuadro */
+    margin: 0 20px;             /* Evita que quede pegado a los bordes */
+    
+}
+
+.containerContacto {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 50vh;           /* Ocupa toda la altura de la pantalla */
+    align-items: center;
+
+}
+
+
+
+.textSobreMi {
+
+    padding: 20px;             /* Espacio interior */
+    border-radius: 10px;        /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;         /* Centrar el texto dentro del recuadro */
+    max-width: 700px;           /* Ancho máximo del recuadro */
+    margin: 0 20px;             /* Evita que quede pegado a los bordes */
+}
+
+
+.textContacto {
+
+    padding: 20px;             /* Espacio interior */
+    border-radius: 10px;        /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;         /* Centrar el texto dentro del recuadro */
+    max-width: 700px;           /* Ancho máximo del recuadro */
+    margin: 0 20px;             /* Evita que quede pegado a los bordes */
+}
+
+/* Contenedor general para las columnas y el footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenido que va entre el header y el footer */
+.container-columns {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas a lo largo del contenedor */
+    flex: 1; /* Asegura que ocupe el espacio disponible */
+    padding: 20px;
+    gap: 20px;
+    margin: 5vh;
+}
+
+/* Columnas de experiencia y formación */
+.experiencia, .formacion {
+    flex: 1; /* Ambas columnas ocupan el mismo espacio */
+}
+
+.textServicios {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 700px;
+    margin: auto; /* Centrará horizontalmente */
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
