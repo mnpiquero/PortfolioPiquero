@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mí (About me)</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos/estilosSobreMi.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="estilos/dark-mode.css">
 
 </head>
 <header>
@@ -23,6 +24,10 @@
       <a href="contacto.html">
         <button type="button">Contacto</button>
       </a>
+      <label>
+        <span id="mode-text">Modo Claro</span> <!-- Texto que cambiará -->
+        <input id="toggle-dark-mode" type="checkbox">
+    </label>
 
 </header>    
 <body>
@@ -40,6 +45,8 @@
           <img src="img/uade.png" alt="uade.png" class="image">
         </div>
       </div>
+      <!-- Script de modo oscuro -->
+    <script src="js/darkMode.js"></script>
 </body>
 
 <footer>

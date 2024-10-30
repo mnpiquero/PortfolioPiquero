@@ -1,59 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="estilos/dark-mode.css">
 </head>
-
+<body>
     <header>
-        <a href="index.html">
-            <button type="button">Inicio</button>
-        </a>
-        <a href="sobreMi.html">
-            <button type="button">Sobre Mi</button>
-        </a>
-        <a href="curriculum.html">
-            <button type="button">Curriculum</button>
-        </a>
-        <a href="servicios.html">
-            <button type="button">Servicios</button>
-        </a>
-        <a href="contacto.html">
-            <button type="button">Contacto</button>
-        </a>
+        <a href="index.html"><button type="button">Inicio</button></a>
+        <a href="sobreMi.html"><button type="button">Sobre Mi</button></a>
+        <a href="curriculum.html"><button type="button">Curriculum</button></a>
+        <a href="servicios.html"><button type="button">Servicios</button></a>
+        <a href="contacto.html"><button type="button">Contacto</button></a>
+        <!-- Checkbox de Modo Oscuro/Claro -->
+        <label>
+            <span id="mode-text">Modo Claro</span> <!-- Texto que cambiará -->
+            <input id="toggle-dark-mode" type="checkbox">
+        </label>
     </header>
-    <body>
-        <div class="content">
-            <div class="title-container">
-                <h1>Inicio</h1>
-            </div>
-            <div class="container">
-                <img src="img/foto nico.png" alt="foto nico" class="image">
-                <div class="text">
-                    <p>Mi nombre es Matías Piquero, pero todos me llaman por mi segundo nombre Nicolás.</p>
-                    <p>Soy estudiante de tercer año de Licenciatura en Sistemas, con experiencia en Análisis Técnico Funcional.</p>
-                    <p>Ofrezco los siguientes servicios: </p> 
-                    <ul>
-                        <li> Análisis, documentación y mejora de procesos</li>
-                        <li> Relevamiento, documentación y trasmisión de requerimientos</li>
-                        <li> Pruebas funcionales</li>
-                        <li> Liderazgo y Gestión de proyectos de desarrollo de software</li>
-                    </ul>
-                </div>
+    <div class="content">
+        <div class="title-container">
+            <h1>Inicio</h1>
+        </div>
+        <div class="container">
+            <img src="img/foto nico.png" alt="foto nico" class="image">
+            <div class="text">
+                <p>Mi nombre es Matías Piquero, pero todos me llaman por mi segundo nombre Nicolás.</p>
+                <p>Soy estudiante de tercer año de Licenciatura en Sistemas, con experiencia en Análisis Técnico Funcional.</p>
+                <p>Ofrezco los siguientes servicios:</p>
+                <ul>
+                    <li>Análisis, documentación y mejora de procesos</li>
+                    <li>Relevamiento, documentación y trasmisión de requerimientos</li>
+                    <li>Pruebas funcionales</li>
+                    <li>Liderazgo y Gestión de proyectos de desarrollo de software</li>
+                </ul>
             </div>
         </div>
-    </body>
+    </div>
+    <!-- Script de modo oscuro -->
+    <script src="js/darkMode.js"></script>
     <footer>
-        <div class ="content">
+        <div class="content">
             <div class="botonfooter">
-                <a href="https://www.linkedin.com/in/nicol%C3%A1s-piquero-576a661a2/"> 
+                <a href="https://www.linkedin.com/in/nicol%C3%A1s-piquero-576a661a2/">
                     <button class="botonFooter" type="button">LinkedIn</button>
                 </a>
-                
             </div>
-    </div>
+        </div>
     </footer>
-
+</body>
 </html>
