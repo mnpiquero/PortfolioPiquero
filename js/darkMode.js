@@ -5,9 +5,9 @@ const modeText = document.getElementById('mode-text');
 if (localStorage.getItem('dark-mode') === 'enabled') {
     document.body.classList.add('dark-mode');
     toggleCheckbox.checked = true; // Marca el checkbox
-    modeText.textContent = 'Modo Claro'; // Cambia el texto a "Modo Oscuro"
+    modeText.textContent = 'Modo Oscuro'; // Cambia el texto a "Modo Oscuro"
 } else {
-    modeText.textContent = 'Modo Oscuro'; // Cambia el texto a "Modo Claro" por defecto
+    modeText.textContent = 'Modo Claro'; // Cambia el texto a "Modo Claro" por defecto
 }
 
 // Agrega un evento al checkbox

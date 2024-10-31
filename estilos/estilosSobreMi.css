@@ -52,7 +52,7 @@ h1 {
 }
 
 p {
-    color: #141313;
+    color: #010000;
     font-family: Arial bold, sans-serif;
 }
 
@@ -118,7 +118,7 @@ footer {
     height: auto;
 }
 
-.text {
+.textSobreMi {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
