@@ -3,63 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios(Services)</title>
-    <link rel="stylesheet" href="estilos/estilosServicios.css">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="estilos/estilosCurriculum.css">
     <link id="theme-stylesheet" rel="stylesheet" href="estilos/dark-mode.css">
 </head>
-
-<header>
-    <header>
-        <a href="index.html">
-            <button type="button">Inicio</button>
-          </a>
-        <a href="sobreMi.html">
-            <button type="button">Sobre Mi</button>
-        </a>
-        <a href="curriculum.html">
-            <button type="button">Curriculum</button>
-          </a>
-          <a href="servicios.html">
-            <button type="button">Servicios</button>
-          </a>
-          <a href="contacto.html">
-            <button type="button">Contacto</button>
-          </a>
-          <label>
-            <span id="mode-text">Modo Claro</span> <!-- Texto que cambiará -->
-            <input id="toggle-dark-mode" type="checkbox"> <!-- Checkbox de Modo Oscuro/Claro -->
-          </label>
-
-    </header>
-</header>
-
 <body>
-  <div class="content">
-    <div class="title-container">
-      <h1>Servicios</h1>
-    </div>
-        <div class="textServicios">
-          <p>Los servicios que ofrezco son :</p>
-          <ul>
-              <li> <b>Análisis, documentación y mejora de procesos:</b> Capacidad para identificar, analizar y documentar los procesos empresariales existentes, proponiendo mejoras que optimicen la eficiencia y efectividad operativa. Experiencia en la elaboración de diagramas de flujo y modelos de procesos que facilitan la comprensión y el rediseño de procedimientos.</li>
-              <li> <b>Relevamiento, documentación y transmisión de requerimientos:</b> Experto en la identificación y recopilación de necesidades del cliente o de los usuarios finales, transformándolas en especificaciones técnicas claras y detalladas. Habilidad para comunicar estos requerimientos de manera efectiva a los equipos de desarrollo y otras partes interesadas, asegurando la alineación con los objetivos del proyecto.</li>
-              <li> <b>Pruebas funcionales:</b> Competente en la planificación y ejecución de pruebas funcionales para validar que las soluciones de software cumplan con los requisitos especificados. Experiencia en la identificación y documentación de incidencias, así como en la colaboración con equipos de desarrollo para su resolución.</li>
-              <li> <b>Liderazgo y gestión de proyectos de desarrollo de software:</b> Habilidad para liderar y coordinar equipos multidisciplinarios en proyectos de desarrollo de software, asegurando el cumplimiento de plazos, presupuesto y alcance. Experiencia en la gestión de riesgos, resolución de problemas y facilitación de la comunicación entre stakeholders para garantizar la entrega exitosa del proyecto.</li>
-          </ul>
+    <header>
+        <a href="index.html"><button type="button">Inicio</button></a>
+        <a href="sobreMi.html"><button type="button">Sobre Mi</button></a>
+        <a href="curriculum.html"><button type="button">Curriculum</button></a>
+        <a href="servicios.html"><button type="button">Servicios</button></a>
+        <a href="contacto.html"><button type="button">Contacto</button></a>
+        <label>
+            <span id="mode-text">Modo Claro</span>
+            <input id="toggle-dark-mode" type="checkbox">
+        </label>
+    </header>
+
+    <h1>Curriculum</h1>
+
+    <!-- Experiencia Laboral Acordeón -->
+    <div class="accordion">
+        <button class="accordion-btn" id="experiencia-btn">Experiencia Laboral</button>
+        <div class="accordion-content" id="experiencia-content">
+            <div class="experiencia">
+                <h2>Experiencia Laboral</h2>
+                <h3>Practia - Analista Técnico Funcional</h3>
+                <p>Cliente: Arcos Dorados - MC Donald's</p>
+                <p>Fecha de inicio: 23/10/2023 - Actualidad</p>
+                <p>Proyectos: Transformación Digital - LATAM</p>
+                <ul>
+                    <li>Análisis de requerimientos de proyectos.</li>
+                    <li>Pruebas funcionales.</li>
+                    <li>Interacción con cliente.</li>
+                    <li>Implementaciones.</li>
+                    <li>Armado de documentación técnico-funcional.</li>
+                    <li>Testing manual.</li>
+                    <li>Metodologías ágiles.</li>
+                </ul>
+                <h3>Eldar - Analista Funcional</h3>
+                <p>Cliente: Cabal</p>
+                <p>Fecha de inicio: 20/05/2022 - Fecha de fin: 23/10/2023</p>
+                <p>Proyectos: Mejoras en aplicación Web</p>
+                <ul>
+                    <li>Análisis de requerimientos de proyectos.</li>
+                    <li>Interacción con cliente.</li>
+                    <li>Armado de documentación técnico-funcional.</li>
+                    <li>Testing manual.</li>
+                    <li>Metodologías ágiles.</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <script src="js/darkMode.js"></script>
-    </div>   
     </div>
+
+    <!-- Formación Académica Acordeón -->
+    <div class="accordion">
+        <button class="accordion-btn" id="formacion-btn">Formación Académica</button>
+        <div class="accordion-content" id="formacion-content">
+            <div class="formacion">
+                <h2>Formación Académica</h2>
+                <h3>Licenciatura en Gestión de Tecnología de la Información</h3>
+                <p>Universidad Argentina de la Empresa</p>
+                <p>Agosto 2020 - Actualidad</p>
+                <h3>Curso de Data Analytics</h3>
+                <p>CoderHouse 2022</p>
+                <h3>Medicina</h3>
+                <p>Universidad Abierta Interamericana</p>
+                <p>5to año (Incompleto)</p>
+                <p>2012 - Julio 2020</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/darkMode.js"></script>
+    <script src="js/accordion.js"></script>
+
+    <footer>
+        <div class="content">
+            <div class="botonfooter">
+                <a href="img/CV. Matías Nicolás Piquero.pdf" download="CV.Matías Nicolás Piquero.pdf">
+                    <button class="botonFooter" type="button">Descargar CV</button>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
-<footer>
-  <div class ="content">
-      <div class="botonfooter">
-          <a href="https://www.linkedin.com/in/nicol%C3%A1s-piquero-576a661a2/"> 
-              <button class="botonFooter" type="button">LinkedIn</button>
-          </a>
-          
-      </div>
-</div>
-</footer>
 </html>

@@ -127,3 +127,30 @@ footer {
     margin: 0 20px;
 }
 
+
+/* Acordeon */
+.accordion-btn {
+    background-color: #8C8585;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #f1f1f148;
+    padding: 0 30px;
+    color: #333;
+}
+
+.accordion-content.expanded {
+    max-height: 1000px; /* Ajusta según el contenido */
+    padding: 30px;
+    color: #333;
+}

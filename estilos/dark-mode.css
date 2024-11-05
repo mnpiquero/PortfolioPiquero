@@ -18,7 +18,7 @@
     background-color: #5a9bd4;
 }
 
-.dark-mode h1, .dark-mode p, .dark-mode ul li, .dark-mode a {
+.dark-mode h1, .dark-mode p, .dark-mode ul li, .dark-mode a, .dark-mode h2, .dark-mode h3 {
     color: #f5f5f5;
 }
 
