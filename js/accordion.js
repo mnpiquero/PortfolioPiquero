@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Alternar la clase .expanded para mostrar/ocultar el contenido
             content.classList.toggle("expanded");
+            toggle.textContent = '+';
         });
     });
 });
